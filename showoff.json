@@ -1,0 +1,9 @@
+{ 
+  "name": "Big O in a Homemade Hash", 
+  "sections": [ 
+    {"section":"intro"},
+    {"section":"tuple_map"},
+    {"section":"big_o"},
+    {"section":"hash_map"}  
+  ]
+}
