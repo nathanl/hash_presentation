@@ -7,15 +7,15 @@
 
 !SLIDE
 # Alien Terrorists
-![Alien Terrorists](alien_terrorists.jpg)
+![Alien Terrorists](../img/alien_terrorists.jpg)
 
 !SLIDE
 # Blow Up
-![Mushroom Cloud](mushroom_cloud.jpg)
+![Mushroom Cloud](../img/mushroom_cloud.jpg)
 
 !SLIDE
 # Sea World
-![Sea World](sea_world.jpg)
+![Sea World](../img/sea_world.jpg)
 
 !SLIDE
 # ????

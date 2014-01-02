@@ -112,7 +112,7 @@ Ruby uses the `.hash` method for this.
     opossum1 = Critter.new('A', 'B', 'C')
     opossum2 = Critter.new('A', 'B', 'X')
 
-    hash[opossum1]  = 'tricky'
+    hash[opossum1]    = 'tricky'
     hash[opossum2]  #=> 'tricky'
 
 !SLIDE
@@ -143,4 +143,21 @@ Ruby uses the `.hash` method for this.
 !SLIDE
 ![HashMap Operations Zoomed Out](operations_zoomed_out.png)
 
+!SLIDE
+# Well
 
+![Native Hash operations](native_hash_operations_thumb.png)
+![Operations, zoomed in](operations_zoomed_in_thumb.png)
+![HashMap Operations Zoomed Out](operations_zoomed_out_thumb.png)
+
+!SLIDE
+# So... is it O(1)?
+
+- O(N)-ish while hash collisions grow
+- "Resets" performance after we rehash
+- But man, rehashing is a beast
+
+!SLIDE
+# Next
+
+Maybe I could see how Rubinius does it?

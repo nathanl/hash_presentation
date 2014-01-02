@@ -4,6 +4,7 @@
     {"section":"intro"},
     {"section":"tuple_map"},
     {"section":"big_o"},
-    {"section":"hash_map"}  
+    {"section":"hash_map"},
+    {"section":"conclusion"}  
   ]
 }
