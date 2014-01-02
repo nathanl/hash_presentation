@@ -29,4 +29,12 @@
 ![Passing Tests](passing_tests.png)
 
 !SLIDE
+# Usage
+
+    @@@ Ruby
+    h = TupleMap.new
+    h['appetizer'] = 'fruit salad'
+    h['appetizer'] #=> 'fruit salad'
+
+!SLIDE
 # Wheeeeeee!

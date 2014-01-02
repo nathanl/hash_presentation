@@ -20,6 +20,10 @@
 !SLIDE
 # ????
 
+~~~SECTION:notes~~~
+"Mr. President, I love aquatic mammals as much as anybody, but that makes **no sense**."
+~~~ENDSECTION~~~
+
 !SLIDE
 # Across the Street...
 ![Surveillance Van](secret_van.jpg)

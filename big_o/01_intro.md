@@ -5,6 +5,20 @@ Computer science for n00bs, by n00bs
 !SLIDE
 # Rate of Growth
 
+~~~SECTION:notes~~~
+Big O is all about rough rates of growth. As the problem grows, how much does the work grow? 
+~~~ENDSECTION~~~
+
+!SLIDE
+![Linear and non-linear growth rates](non-linear_growth_rates.png)
+
+~~~SECTION:notes~~~
+N = X
+Y = steps
+
+Big O is really concerned with just one question.
+~~~ENDSECTION~~~
+
 !SLIDE
 # How's it shaped?
 
@@ -16,11 +30,9 @@ We don't care about angle or location.
 ![Linear growth rates](linear_growth_rates.png)
 
 ~~~SECTION:notes~~~
+You care about these differences, but Big O doesn't. 
 
-You can see that some have steeper slopes than others, and some have a bit of "overhead"; they take a bit of time to get started. So in absolute terms, they are not equal, and you might optimize an algorithm to improve from one to another.
-
-But in Big O terms, these are all the same. That's because the time taken grows proportionally to the size of the problem; that's called "O(N)". They look distinctive in that they are shaped like straight lines with some slope.
-
+All linear. All "straight lines with some slope." Work proportional to N.
 ~~~ENDSECTION~~~
 
 !SLIDE
@@ -29,12 +41,21 @@ But in Big O terms, these are all the same. That's because the time taken grows 
 ![These are all O(1)](one.png)
 
 ~~~SECTION:notes~~~
+Again, you care, Big O doesn't. "Doesn't grow" is always awesome.
 
-These are all O(1), even though one is "always takes 0.1 seconds" and another takes 9. Yes, you might care about that. But Big O doesn't, because it's about growth. For Big O, we just care that the time is constant. There's no such thing as O(10). We just hand-wave and say, "eh, it's O(1)."
-
+That's what we're aiming for with our hash.
 ~~~ENDSECTION~~~
 
 !SLIDE
 # Linear vs Non-Linear Growth
 
 ![Linear and non-linear growth rates](non-linear_growth_rates.png)
+
+~~~SECTION:notes~~~
+Any O(N) beats any O(N**2) beats any O(N!) in the long run.
+
+Brute forcing the "Traveling Salesman" grows as O(N!) (N factorial). If 5 cities takes 0.12 seconds, solving for 21 will take 97 billion years.
+
+Can I, practically speaking, keep solving bigger versions of this problem or not? If so,
+how painful will it be?
+~~~ENDSECTION~~~

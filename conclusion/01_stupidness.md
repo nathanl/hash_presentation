@@ -3,11 +3,14 @@
 ![Obama Unhapp](obama_unhappy.jpg)
 
 !SLIDE
+# It's too late!
+
+!SLIDE
 # Alien Terrorists
 ![Alien Terrorists](../img/alien_terrorists.jpg)
 
 !SLIDE
-# Blow Up
+# Blew Up
 ![Mushroom Cloud](../img/mushroom_cloud.jpg)
 
 !SLIDE

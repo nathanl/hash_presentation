@@ -40,6 +40,10 @@ Plus a digest function:
       nil...
     ]
 
+~~~SECTION:notes~~~
+For a nice interface, use TupleMap!
+~~~ENDSECTION~~~
+
 !SLIDE
 # 2. Waste
 
@@ -139,7 +143,7 @@ Double size, then find the next prime
 
     # Using non-primes
     r.select {|i| i % 200 == i % 400 }.count
-    #=> 5000 - half the range!
+    #=> 5000 - 50% of these values!
 
     # Using primes
     r.select {|i| i % 199 == i % 401 }.count

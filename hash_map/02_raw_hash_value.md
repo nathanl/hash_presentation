@@ -126,29 +126,37 @@ Ruby uses the `.hash` method for this.
 ![Passing Tests](passing_tests.png)
 
 !SLIDE
-# But... Speed, man! Speed!
+# LET'S... SEE... THE... GRAPH!!!
+
+~~~SECTION:notes~~~
+ARE YOU READY FOR THE GRAPH!!!?
+~~~ENDSECTION~~~
 
 !SLIDE
 ![Operations, zoomed in](operations_zoomed_in.png)
 
+~~~SECTION:notes~~~
+Everything is fine here. Totally good. Really.
+~~~ENDSECTION~~~
+
 !SLIDE
-# Hmmmmmmm
+# Hmmm. What about Hash?
 
 !SLIDE
 ![Native Hash operations](native_hash_operations.png)
 
 !SLIDE
-# Oh...
+# How big WERE those spikes?
 
 !SLIDE
 ![HashMap Operations Zoomed Out](operations_zoomed_out.png)
 
 !SLIDE
-# Well
+# Ouch
 
-![Native Hash operations](native_hash_operations_thumb.png)
-![Operations, zoomed in](operations_zoomed_in_thumb.png)
-![HashMap Operations Zoomed Out](operations_zoomed_out_thumb.png)
+~~~SECTION:notes~~~
+SO, THIS IS AS FAR AS I GOT...
+~~~ENDSECTION~~~
 
 !SLIDE
 # So... is it O(1)?
