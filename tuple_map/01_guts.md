@@ -2,13 +2,13 @@
 # No Problem!
 
 !SLIDE
-## Guts
+# Guts
 
     @@@ Ruby
     [['key1', 'val1'], ['key2', 'val2']...]
 
 !SLIDE
-## Basic Methods
+# Basic Methods
 
     @@@ Ruby
     class TupleMap
@@ -23,3 +23,10 @@
         # If no match, insert tuple
       end
     end
+
+!SLIDE
+# Passing Tests
+![Passing Tests](passing_tests.png)
+
+!SLIDE
+# Wheeeeeee!

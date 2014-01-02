@@ -3,15 +3,15 @@
 Computer science for n00bs, by n00bs
 
 !SLIDE
-## Rate of Growth
+# Rate of Growth
 
 !SLIDE
-## How's it shaped?
+# How's it shaped?
 
 We don't care about angle or location.
 
 !SLIDE
-## Linear Growth
+# Linear Growth
 
 ![Linear growth rates](linear_growth_rates.png)
 
@@ -24,7 +24,7 @@ But in Big O terms, these are all the same. That's because the time taken grows 
 ~~~ENDSECTION~~~
 
 !SLIDE
-## O(1)
+# O(1) - Non-growth
 
 ![These are all O(1)](one.png)
 
@@ -35,6 +35,6 @@ These are all O(1), even though one is "always takes 0.1 seconds" and another ta
 ~~~ENDSECTION~~~
 
 !SLIDE
-## Linear vs Non-Linear Growth
+# Linear vs Non-Linear Growth
 
 ![Linear and non-linear growth rates](non-linear_growth_rates.png)

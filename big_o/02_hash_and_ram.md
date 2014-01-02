@@ -12,6 +12,9 @@ Here we'll have to walk through half the entries, on average, to find the one we
 ~~~ENDSECTION~~~
 
 !SLIDE
+![This grows badly](tuple_map_growth.png)
+
+!SLIDE
 # What can we use that's O(1)?
 
 !SLIDE

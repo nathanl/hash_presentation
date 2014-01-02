@@ -2,27 +2,29 @@
 
 !SLIDE
 
-## Not:
+!SLIDE
+# Not this
+
+![Hash, the Drug](hash_drug.jpg)
+
+(From Wikipedia)
 
 !SLIDE
-## Drug
+# Or this
 
-<!-- TODO: Image -->
+![Hash, the Food](hash_food.jpg)
 
-!SLIDE
-## Food
-
-<!-- TODO: Image -->
+(From Wikipedia)
 
 !SLIDE
-## Digest
+# Or even this
 
     @@@ Ruby
     Digest::MD5.digest('hi') 
     # => "I\xF6\x8A\\\x84\x93\xEC..."
 
 !SLIDE
-## Data Structure
+# Hash - a data structure
 
     @@@ Ruby
     h = {} # or Hash.new

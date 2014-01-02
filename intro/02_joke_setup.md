@@ -3,6 +3,9 @@
 ![Call from the President](presidential_call.jpg)
 
 !SLIDE
+# "Unless you re-implement Ruby's Hash..."
+
+!SLIDE
 # Alien Terrorists
 ![Alien Terrorists](alien_terrorists.jpg)
 
@@ -18,4 +21,10 @@
 # ????
 
 !SLIDE
-# Welp, Duty Calls
+# Across the Street...
+![Surveillance Van](secret_van.jpg)
+
+<!-- http://www.flickr.com/photos/eridony/4969156992/ -->
+
+!SLIDE
+# Welp, duty calls!
