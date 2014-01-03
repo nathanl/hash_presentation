@@ -62,11 +62,13 @@ Actually probably not, because physics. But at this speed and distance, the cloc
 !SLIDE
 # Arrays and RAM
 
+Each array item is as big as a pointer.
+
     @@@ Ruby
     some_array[328]
     # item location is:
     # array_start_location +
-    #  (pointer_size x index)
+    #  (index x pointer_size)
 
 ~~~SECTION:notes~~~
 Calculate RAM address, bada bing.

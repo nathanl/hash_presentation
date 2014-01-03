@@ -33,8 +33,5 @@
 
     @@@ Ruby
     h = TupleMap.new
-    h['appetizer'] = 'fruit salad'
-    h['appetizer'] #=> 'fruit salad'
-
-!SLIDE
-# Wheeeeeee!
+    h['hokey']   = 'pokey'
+    h['hokey'] #=> 'pokey'

@@ -1,3 +1,8 @@
+# Done!
+
+![Email to president](email_to_president.png)
+
+!SLIDE
 # Presidential Disapproval
 
 ![Presidential Disapproval](presidential_disapproval.jpg)
@@ -13,6 +18,7 @@ to healthcare.gov?"
 But the phone was dead.
 ~~~ENDSECTION~~~
 
+!SLIDE
 
 # O(N) != O(1)
 

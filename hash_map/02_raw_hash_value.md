@@ -3,7 +3,7 @@
 Remember:
 
 1. Decide on a starting size
-2. Compute a key's raw hash value
+2. Compute a key's raw hash value (??)
 3. `index = raw_hash_value % array_size`
 
 Eh?
@@ -93,11 +93,9 @@ Ruby uses the `.hash` method for this.
     class Critter < Struct.new(
       :family, :genus, :species
      )
-      # Species Schmecies!
       def eql?(other)
-        other.class  == self.class &&
-        other.family == family &&
-        other.genus  == genus
+        # Ignore species
+        same_family_and_genus?
       end
       # Reflects our idea of equality
       def hash
@@ -126,6 +124,13 @@ Ruby uses the `.hash` method for this.
 ![Passing Tests](passing_tests.png)
 
 !SLIDE
+# Review
+- key => number using `.hash`
+- number = index in sparse array
+- Growth = fewer collisions = faster
+- Growth = more memory used
+
+!SLIDE
 # LET'S... SEE... THE... GRAPH!!!
 
 ~~~SECTION:notes~~~
@@ -136,7 +141,7 @@ ARE YOU READY FOR THE GRAPH!!!?
 ![Operations, zoomed in](operations_zoomed_in.png)
 
 ~~~SECTION:notes~~~
-Everything is fine here. Totally good. Really.
+APPLAUSE! ... Confusion. Analysis.
 ~~~ENDSECTION~~~
 
 !SLIDE
@@ -166,6 +171,6 @@ SO, THIS IS AS FAR AS I GOT...
 - But man, rehashing is a beast
 
 !SLIDE
-# Next
+# Um...
 
 Maybe I could see how Rubinius does it?
