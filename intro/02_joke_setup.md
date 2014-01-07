@@ -2,6 +2,10 @@
 # An Important Call
 ![Call from the President](presidential_call.jpg)
 
+~~~SECTION:notes~~~
+"We've received news of a grave threat."
+~~~ENDSECTION~~~
+
 !SLIDE
 # "Unless you re-implement Ruby's Hash..."
 

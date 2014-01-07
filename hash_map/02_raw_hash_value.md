@@ -1,10 +1,10 @@
-# Whence the Raw Hash Value?
+# Whence the Raw Digest Value?
 
 Remember:
 
 1. Decide on a starting size
-2. Compute a key's raw hash value (??)
-3. `index = raw_hash_value % array_size`
+2. Compute a key's raw digest value (??)
+3. `index = raw_digest_value % array_size`
 
 Eh?
 
@@ -67,11 +67,16 @@ Eh?
     {hi: 'there'} == {hi: 'there'}
 
 !SLIDE
-# Therefore...
+# General idea
     @@@ Ruby
     # Assuming obj1.eql?(obj2)
     hash[obj1] = 'val'
-    hash[obj2] #=> 'val'`
+    hash[obj2] #=> 'val'
+
+!SLIDE
+# How?
+
+Can't predict what keys we'll get
 
 !SLIDE
 # Cheater Pantses
@@ -99,7 +104,7 @@ Ruby uses the `.hash` method for this.
       end
       # Reflects our idea of equality
       def hash
-        (family.hash + genus.hash) / 2
+        "#{family.hash}#{genus.hash}".to_i
       end
     end
 
@@ -131,6 +136,11 @@ Ruby uses the `.hash` method for this.
 - Growth = more memory used
 
 !SLIDE
+# Did we get O(1)?
+
+We want a nice, flat line.
+
+!SLIDE
 # LET'S... SEE... THE... GRAPH!!!
 
 ~~~SECTION:notes~~~
@@ -154,10 +164,13 @@ APPLAUSE! ... Confusion. Analysis.
 # How big WERE those spikes?
 
 !SLIDE
+# Ouch
 ![HashMap Operations Zoomed Out](operations_zoomed_out.png)
 
 !SLIDE
-# Ouch
+# Still...
+
+![Operations, zoomed in](operations_zoomed_in.png)
 
 ~~~SECTION:notes~~~
 SO, THIS IS AS FAR AS I GOT...
@@ -166,11 +179,11 @@ SO, THIS IS AS FAR AS I GOT...
 !SLIDE
 # So... is it O(1)?
 
-- O(N)-ish while hash collisions grow
-- "Resets" performance after we rehash
-- But man, rehashing is a beast
+- Rehashing is a beast - could optimize?
+- O(1) between spikes (<= 10 collisions)
+- Hooray?
 
-!SLIDE
-# Um...
-
-Maybe I could see how Rubinius does it?
+~~~SECTION:notes~~~
+Not a language issue, an algo issue. C might change
+Y but not shape.
+~~~ENDSECTION~~~

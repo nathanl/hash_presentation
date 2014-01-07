@@ -1,12 +1,14 @@
 # Our Big O Problem
 
     @@@ Ruby
-    [['key1', 'val1'], ['key2', 'val2']...]
+    [['hi', 'hola'], ['cat', 'gato']...]
 
 !SLIDE
 ![This grows badly](tuple_map_growth.png)
 
 ~~~SECTION:notes~~~
+Explain Carefully! Size of hash is X.
+
 Random reads and insertions. Insert is N, read averages 1/2 N.
 
 Looks linear (not proof).
@@ -17,7 +19,7 @@ Looks linear (not proof).
 
 !SLIDE
 
-# Array lookup by index.
+# Array lookup by index: O(1)
 
     @@@ Ruby
     some_array[328]
@@ -56,7 +58,10 @@ This is why we defragged spinning disks - seek times.
 ~~~SECTION:notes~~~
 RAM is different. All locations equal.
 
-Actually probably not, because physics. But at this speed and distance, the clock speed rounds off the tiny differences.
+Actually probably not, because physics. But at this speed and distance, tiny difference.
+
+More importantly, the computer has a clock whose job is to keep timing synchronized, so it will **ensure** that these lookups take the same amount of time.
+
 ~~~ENDSECTION~~~
 
 !SLIDE
