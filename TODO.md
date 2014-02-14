@@ -14,3 +14,9 @@ In both cases, you pay a linear performance penalty at the moment you redistribu
 
 - Benchmark with it and see if it performs well
 - If so, step through it and see what secrets I can glean
+
+## Presentation
+
+- Style `span.attribution` to sit below the image and have small text
+- See if surveillance van photo owner replies
+- Make my own RAM and hard drive diagrams

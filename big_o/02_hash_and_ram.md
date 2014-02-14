@@ -22,8 +22,9 @@ Looks linear (not proof).
 # Array lookup by index: O(1)
 
     @@@ Ruby
+
+    # Equal lookup times
     some_array[328]
-    # is just as fast as
     some_array[5]
 
 ~~~SECTION:notes~~~

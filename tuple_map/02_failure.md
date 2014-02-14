@@ -6,6 +6,8 @@
 # Presidential Disapproval
 
 ![Presidential Disapproval](presidential_disapproval.jpg)
+<span class='attribution'>Public domain - Official White House Photo by Pete Souza</span>
+<!-- https://www.acclaimimages.com/_gallery/_pages/0519-0912-0919-0940.html -->
 
 ~~~SECTION:notes~~~
 "My eggheads tell me that this hash of your is not up to standards.

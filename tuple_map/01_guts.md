@@ -8,21 +8,17 @@
     [['hi', 'hola'], ['cat', 'gato']...]
 
 !SLIDE
-# Basic Methods
+# Syntactic Sugar
 
     @@@ Ruby
     class TupleMap
-      # For hash['foo'] (reader)
-      def [](key) # For 
-        # 1. Walk through tuples
-        # 2. Find matching key
-        # 3. Return value
+
+      def [](key)
+        # read
       end
 
-      # For hash['foo'] = 'bar' (writer)
       def []=(key, value)
-        # Same, but update value
-        # If no match, insert tuple
+        # write
       end
     end
 
