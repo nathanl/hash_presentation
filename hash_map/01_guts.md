@@ -19,7 +19,7 @@ A sparse array:
     [nil, nil, 'fruit salad', nil...]
 
 ~~~SECTION:notes~~~
-"Digest" like food: one-way process
+"Digest" like food: one-way process. Can't turn poop back into [same] pizza.
 ~~~ENDSECTION~~~
 
 !SLIDE
