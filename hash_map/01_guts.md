@@ -53,7 +53,7 @@ A sparse array:
 ~~~SECTION:notes~~~
 For a nice interface, use TupleMap!
 
-At collisions, O(N) again...
+At collisions, O(N) again... we could use a binary tree for O(log N) disambiguation, but instead we'll put a hard limit on number of collisions and call it O(1)
 ~~~ENDSECTION~~~
 
 !SLIDE

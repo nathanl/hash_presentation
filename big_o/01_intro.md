@@ -12,6 +12,7 @@ Wave to everyone: O(1). Handshake all: O(N). All handshake all sequentially: O(N
 ~~~ENDSECTION~~~
 
 !SLIDE
+# Orders of Growth
 ![Linear and non-linear growth rates](non-linear_growth_rates.png)
 
 ~~~SECTION:notes~~~

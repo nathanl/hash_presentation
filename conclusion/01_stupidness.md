@@ -10,11 +10,12 @@
 !SLIDE
 # Alien Terrorists
 ![Alien Terrorists](../img/alien_terrorists.jpg)
+<span class="attribution">Fair Use.</span>
 
 !SLIDE
 # Blew Up
 ![Mushroom Cloud](../img/mushroom_cloud.jpg)
-<span clas="attribution">Public Domain - US Department of Energy</span>
+<span class="attribution">Public Domain - US Department of Energy</span>
 <!-- https://commons.wikimedia.org/wiki/File:Castle_Romeo.jpg -->
 
 !SLIDE

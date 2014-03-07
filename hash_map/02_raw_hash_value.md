@@ -168,22 +168,37 @@ APPLAUSE! ... Confusion. Analysis.
 ![HashMap Operations Zoomed Out](operations_zoomed_out.png)
 
 !SLIDE
-# Still...
+# But Wait!
 
-![Operations, zoomed in](operations_zoomed_in.png)
+Both have linear spikes
+<!-- HERE show Hash and HashMap side by side, or somehow illustrate that the spikes on both are linear -->
 
-~~~SECTION:notes~~~
-SO, THIS IS AS FAR AS I GOT...
-~~~ENDSECTION~~~
+<img src="native_hash_operations.png" class="sidebyside">
+<img src="operations_zoomed_out.png" class="sidebyside">
 
 !SLIDE
-# So... is it O(1)?
+# Zoom again
+![Operations, zoomed in](operations_zoomed_in.png)
 
-- Rehashing is a beast - could optimize?
-- O(1) between spikes (<= 10 collisions)
-- Hooray?
+!SLIDE
+# Success!
+
+- Reads always <= 10 steps
+- Same for writes between spikes
+
+!SLIDE
+# Seriously!
+
+- Each rehashing unavoidably O(n), BUT...
+- Amortized insertion time still O(1) - woo!
+
+!SLIDE
+# Optimizations?
+
+- Trade more memory at a time
+- Rehash in bg thread?
+- Implement in C
 
 ~~~SECTION:notes~~~
-Not a language issue, an algo issue. C might change
-Y but not shape.
+Not a language issue, an algo issue. C might change Y but not shape.
 ~~~ENDSECTION~~~

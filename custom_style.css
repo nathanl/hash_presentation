@@ -1,0 +1,8 @@
+.content .attribution { 
+  display: block;
+  font-size: 0.5em;
+}
+.content img.sidebyside {
+  width: 40%;
+  height: 40%;
+}
