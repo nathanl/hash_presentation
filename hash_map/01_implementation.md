@@ -175,6 +175,7 @@ Sparse array size 3.
     r.select {|i| i % 199 == i % 401 }.count
     #=> 0
 
+!SLIDE
 # Whence the Raw Digest Value?
 
 Remember:
@@ -247,25 +248,26 @@ Eh?
 # General idea
     @@@ Ruby
     # Assuming obj1.eql?(obj2)
-    hash[obj1] = 'val'
+    hash[obj1]   = 'val'
     hash[obj2] #=> 'val'
 
 !SLIDE
 # How?
 
-Can't predict what keys we'll get
+- Can't predict what keys we'll get
+- "Same value" is subjective
 
 !SLIDE
 # Cheater Pantses
 
-Ruby uses the `.hash` method for this.
+Ruby uses the `#hash` method for this.
 
 !SLIDE
 # .hash
 
     @@@ Ruby
+    # "Same val"  => same #hash
     [1,2,3].hash #=> -262151465130803218
-    # Equivilent object? Same hash val
     [1,2,3].hash #=> -262151465130803218
 
 !SLIDE
