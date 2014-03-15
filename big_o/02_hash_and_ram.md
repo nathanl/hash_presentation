@@ -54,8 +54,6 @@ This is why we defragged spinning disks - seek times.
 
 ![RAM](ram.png)
 
-(From HowStuffWorks.com)
-
 ~~~SECTION:notes~~~
 RAM is different. All locations equal.
 
