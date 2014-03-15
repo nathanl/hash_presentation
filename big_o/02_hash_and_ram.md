@@ -42,7 +42,7 @@ TADA!
 
 ![Spinning Disk](spinning_disk.gif)
 
-(Adapted from <br/>http://www.read.cs.ucla.edu/111/2006fall/notes/lec15)
+<span class="attribution">Adapted from http://www.read.cs.ucla.edu/111/2006fall/notes/lec15</span>
 
 ~~~SECTION:notes~~~
 This is why we defragged spinning disks - seek times.
