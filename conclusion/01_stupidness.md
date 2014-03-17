@@ -5,6 +5,11 @@
 <!-- http://www.acclaimimages.com/_gallery/_image_pages/0519-0906-2410-5525.html -->
 
 !SLIDE
+# What?
+
+![Email stuck in drafts](stuck_in_drafts.png)
+
+!SLIDE
 # It's too late!
 
 !SLIDE

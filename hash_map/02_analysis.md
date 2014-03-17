@@ -36,12 +36,12 @@ APPLAUSE! ... Confusion. Analysis.
 Both have linear spikes
 <!-- HERE show Hash and HashMap side by side, or somehow illustrate that the spikes on both are linear -->
 
-<img src="native_hash_operations.png" class="sidebyside">
-<img src="operations_zoomed_out.png" class="sidebyside">
+<img src="hash_rehashes_linearly.png" class="sidebyside">
+<img src="hashmap_rehashes_linearly.png" class="sidebyside">
 
 !SLIDE
 # Zoom again
-![Operations, zoomed in](operations_zoomed_in.png)
+![HashMap flat between spikes](hashmap_flat_between_spikes.png)
 
 !SLIDE
 # Success!
@@ -59,6 +59,11 @@ Both have linear spikes
 <img src="balloons.jpg" style="height: 800px; width: 900px">
 
 !SLIDE
+# Ship it!
+
+![Second email to president](second_email_to_president.png)
+
+!SLIDE
 # Optimizations?
 
 - Trade more memory at a time
@@ -68,3 +73,10 @@ Both have linear spikes
 ~~~SECTION:notes~~~
 Not a language issue, an algo issue. C might change Y but not shape.
 ~~~ENDSECTION~~~
+
+!SLIDE
+# Applications
+
+- Hashes are O(1) multi-tool
+- Re-hashing also stinks in distributed hash tables
+

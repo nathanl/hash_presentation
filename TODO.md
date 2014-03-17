@@ -38,6 +38,4 @@ I declare my hash a success because 1) all hash tables take O(n) time to rehash,
 
 ## Presentation
 
-- Style `span.attribution` to sit below the image and have small text
-- See if surveillance van photo owner replies
-- Make my own RAM and hard drive diagrams
+- Side-by-side graph comparison - draw lines

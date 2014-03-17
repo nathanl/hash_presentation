@@ -1,11 +1,6 @@
 !SLIDE
 # New Plan
 !SLIDE
-    @@@ Ruby
-    my_hash['appetizer'] = 'fruit salad'
-
-<br/>
-
 # Guts
 
 A digest function:
