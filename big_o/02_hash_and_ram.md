@@ -32,36 +32,9 @@ TADA!
 ~~~ENDSECTION~~~
 
 !SLIDE
-# Um... how does THAT work?
+# Why does *that* work?
 
-!SLIDE
-# Spinning Disk vs RAM
-
-!SLIDE
-# Spinning Disk
-
-![Spinning Disk](spinning_disk.gif)
-
-<span class="attribution">Adapted from http://www.read.cs.ucla.edu/111/2006fall/notes/lec15</span>
-
-~~~SECTION:notes~~~
-This is why we defragged spinning disks - seek times.
-(Not with solid state?)
-~~~ENDSECTION~~~
-
-!SLIDE
-# RAM!
-
-![RAM](ram.png)
-
-~~~SECTION:notes~~~
-RAM is different. All locations equal.
-
-Actually probably not, because physics. But at this speed and distance, tiny difference.
-
-More importantly, the computer has a clock whose job is to keep timing synchronized, so it will **ensure** that these lookups take the same amount of time.
-
-~~~ENDSECTION~~~
+## Because RAM
 
 !SLIDE
 # Arrays and RAM

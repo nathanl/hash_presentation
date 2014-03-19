@@ -157,125 +157,66 @@ Sparse array size 3.
 !SLIDE
 # Whence the Raw Digest?
 
-Remember:
-
-1. Decide on a starting size
-2. Compute a key's raw digest value (??)
-3. `index = raw_digest_value % array_size`
-
-Eh?
+<ol>
+<li class="unfocused"> Decide on a starting size</li>
+<li>Compute a key's raw digest value (??)</li>
+<li class="unfocused">`index = raw_digest_value % array_size`</li>
+</ol>
 
 !SLIDE
-# Try 1: Roll our own
+# Raw Digest
 
     @@@ Ruby
     def raw_digest(key)
-      # Convert to Unicode code points
-      key.unpack('U*').join('').to_i
-    end
-
-    raw_digest('woah')   #=> 11911197104
-    raw_digest('yarrr!') #=> 1219711411411433
-
-!SLIDE
-# Whoops
-
-    @@@ Ruby
-    raw_digest(:thingy)  #=> NoMethodError
-    raw_digest([1,2,3])  #=> NoMethodError
-
-!SLIDE
-# Try 2: Object IDs
-    @@@ Ruby
-    def raw_digest(key)
-      # Everything is an object!
-      key.object_id
+      # ??
     end
 
 !SLIDE
-# Success?
+# Raw Digest Requirements
+
+## **Any object** to a number
+
     @@@ Ruby
-    raw_digest(:thingy)  #=> 522568
-    raw_digest([1,2,3])  #=> 70121947506720
+    hash['a']
+    hash[['a', 'e']]
+    hash[Person.first]
 
 !SLIDE
-# Success!
-    @@@ Ruby
-    key    = [1,2,3]
-    h      = HashMap.new
-    h[key] = 'stuff'
-    h[key] #=> 'stuff'
+# Raw Digest Requirements
 
-!SLIDE
-# Wait...
-    
-    @@@ Ruby
-    h = HashMap.new
-    h[[1,2,3]] = 'stuff'
-    h[[1,2,3]] #=> nil
-    h['oh']    = 'noes'
-    h['oh']    #=> nil
+## "Same value" keys interchangable
 
-!SLIDE
-# Support "same value" keys
     @@@ Ruby
-    'foo'         == 'foo'
-    [1,2,3]       == [1,2,3]
-    {hi: 'there'} == {hi: 'there'}
+    string1 = 'a'
+    string2 = 'a'
 
-!SLIDE
-# General idea
-    @@@ Ruby
-    # Assuming obj1.eql?(obj2)
-    hash[obj1]   = 'val'
-    hash[obj2] #=> 'val'
+    hash[string1]   = 'apple'
+    hash[string2] #=> 'apple'
 
 !SLIDE
 # How?
 
-- Can't predict what keys we'll get
-- "Same value" is subjective
-
-!SLIDE
-# Cheater Pantses
-
-Ruby uses the `#hash` method for this.
-
-!SLIDE
-# .hash
+"Same value" is subjective
 
     @@@ Ruby
-    # "Same val"  => same #hash
+    a, b = PersonCollection.take(2)
+    hash[a]  = 'something'
+    hash[b] #=> ??
+
+!SLIDE
+# Ask the object
+
+    @@@ Ruby
+    'hi'.hash       #=> 1426215061227324254
+    ['a', 'b'].hash #=> -1590378560689017266 
+    Object.new.hash #=> 56268189660135834
+
+!SLIDE
+# `.hash` and `.eql?` must agree
+
+    @@@ Ruby
     [1,2,3].hash #=> -262151465130803218
     [1,2,3].hash #=> -262151465130803218
-
-!SLIDE
-# "Same value" is negotiable
-
-    @@@ Ruby
-    class Critter < Struct.new(
-      :family, :genus, :species
-     )
-      def eql?(other)
-        # Ignore species
-        same_family_and_genus?
-      end
-      # Reflects our idea of equality
-      def hash
-        "#{family.hash}#{genus.hash}".to_i
-      end
-    end
-
-!SLIDE
-# See?
-    
-    @@@ Ruby
-    opossum1 = Critter.new('A', 'B', 'C')
-    opossum2 = Critter.new('A', 'B', 'X')
-
-    hash[opossum1]    = 'tricky'
-    hash[opossum2]  #=> 'tricky'
-
 
 !SLIDE
 # Review

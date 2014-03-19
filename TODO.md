@@ -1,5 +1,3 @@
-- Decide high points to hit if run out of time
-- Streamline production of raw hash values, maybe cut Critter or just describe as practical application
-- Maybe cut disk vs RAM? Or just describe very briefly. "Because RAM is awesome. On a spinning disk, data that's far away takes longer to get to, but RAM is 'random access'; you just light up the wires to the right address and you get your value in constant time. All you have to know is the address. And Ruby does know the address of an array element."
 - Change writes from blue to "spring" green in Acorn
+- Decide high points to hit if run out of time
 - Zoom on surveillance van writing?
