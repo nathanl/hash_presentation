@@ -1,9 +1,5 @@
 # Nathan Long
 
 - nathanmlong.com/blog
-- nathanmlong@gmail.com
+- him@nathanmlong.com
 - @sleeplessgeek
-
-~~~SECTION:notes~~~
-Let's talk about this! Help me out!
-~~~ENDSECTION~~~

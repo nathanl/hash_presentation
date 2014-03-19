@@ -27,18 +27,18 @@ A sparse array:
 # 1. Collisions
     @@@ Ruby
     index_of('appetizer') # => 2
-    index_of('marmoset')  # => 2 - D'oh!
+    index_of('mammal'  )  # => 2 - D'oh!
 
 !SLIDE
-# Solution: Tuples again!
+# Solution: Buckets
     @@@ Ruby
     [
       nil,
       nil,
-      # Disambiguate!
+      # Tuples again!
       [
         ['appetizer', 'fruit salad']
-        ['marmoset',  'larry']
+        ['mammal',    'water buffalo']
       ],
       nil...
     ]
@@ -58,7 +58,7 @@ At collisions, O(N) again... we could use a binary tree for O(log N) disambiguat
     [
       nil,       # waste
       nil,       # waste
-      'thingy',
+      (a bucket),
       nil,       # waste
       nil...     # waste
     ]
@@ -87,7 +87,7 @@ Memory for Speed
 !SLIDE
 # "As Needed"
 
-## When any key reaches 10 collisions
+## When any bucket has 10 keys
 
 !SLIDE
 # "Grow"
@@ -112,8 +112,14 @@ Memory for Speed
 4. Hope for fewer collisions
 ~~~ENDSECTION~~~
 
+
 !SLIDE
-# Hashing strategy
+# "Grow"
+
+Must rehash every key
+
+!SLIDE
+# Strategy
 
 1. Decide on a starting size
 2. Compute a key's raw digest value (??)
@@ -304,7 +310,12 @@ Ruby uses the `#hash` method for this.
 
 !SLIDE
 # Review
-- key => number using `.hash`
-- number = index in sparse array
+- key to number using `.hash`...
+- ...Modulo number of available buckets...
+- ...is index of bucket to use
+
+!SLIDE
+# Review
+
 - Growth = fewer collisions = faster
 - Growth = more memory used
