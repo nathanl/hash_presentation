@@ -1,3 +1,9 @@
+# General
+
+- DESCRIBE AXES and graphs
+- Excitement! Confidence! ...Chutzpah? ...Vigor!?... Excitement! :)
+- More off-the-cuff while slide stays the same
+
 # Orders of growth
 
 Wave O(1), handshakes O(N), introductions O(N**2)

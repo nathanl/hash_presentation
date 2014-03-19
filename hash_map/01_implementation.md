@@ -43,8 +43,6 @@ A sparse array:
       nil...
     ]
 
-(But this re-introduces our scaling problem...)
-
 ~~~SECTION:notes~~~
 For a nice interface, use TupleMap!
 
@@ -152,32 +150,12 @@ Sparse array size 3.
 !SLIDE
 # Growth Strategy
 
-## Double size?
-
-!SLIDE
-# Solution: Ensure size is prime
-
 ## Double size, then find the next prime
 
 (Eg: 199, 401, 809, 1619, 3251, 6521...)
 
 !SLIDE
-# Proof
-
-    @@@ Ruby
-    # Raw digest values
-    r = (10_000...20_000)
-
-    # Re-collisions with non-prime sizes
-    r.select {|i| i % 200 == i % 400 }.count
-    #=> 5000
-
-    # Re-collisions with prime sizes
-    r.select {|i| i % 199 == i % 401 }.count
-    #=> 0
-
-!SLIDE
-# Whence the Raw Digest Value?
+# Whence the Raw Digest?
 
 Remember:
 
@@ -298,15 +276,6 @@ Ruby uses the `#hash` method for this.
     hash[opossum1]    = 'tricky'
     hash[opossum2]  #=> 'tricky'
 
-!SLIDE
-# (Bonus Tip)
-
-`.hash` is also used by `Set` to determine uniqueness
-
-!SLIDE
-# OK - It works!
-
-![Passing Tests](passing_tests.png)
 
 !SLIDE
 # Review

@@ -78,5 +78,4 @@ Not a language issue, an algo issue. C might change Y but not shape.
 # Applications
 
 - Hashes are O(1) multi-tool
-- Re-hashing also stinks in distributed hash tables
-
+- Dynamo DBs (Riak, Cassandra) are "distributed hash tables"

@@ -29,8 +29,3 @@
     h = TupleMap.new
     h['hokey']   = 'pokey'
     h['hokey']  #=> 'pokey'
-
-!SLIDE
-# Passing Tests
-![Passing Tests](passing_tests.png)
-

@@ -42,6 +42,3 @@
 <span class="attribution">Copyright (c) 2010 Brandon Bartoszek. Used by permission.</a>
 <!-- http://www.flickr.com/photos/eridony/4969156992/ -->
 <!-- left comment asking for permission to use - he responded that it was fine -->
-
-!SLIDE
-# Welp, duty calls!
