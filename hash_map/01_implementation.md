@@ -64,7 +64,7 @@ At collisions, O(N) again... we could use a binary tree for O(log N) disambiguat
 !SLIDE
 # Solution: Get Over It!
 
-Just kidding. Well, a little.
+Mostly.
 
 !SLIDE
 # Hashes Are A Tradeoff
@@ -119,9 +119,9 @@ Must rehash every key
 !SLIDE
 # Strategy
 
-1. Decide on a starting size
+1. Start with X buckets
 2. Compute a key's raw digest value (??)
-3. `index = raw_digest_value % array_size`
+3. `bucket_number = raw_digest_value % x`
 
 !SLIDE
 # Modulo
@@ -158,9 +158,9 @@ Sparse array size 3.
 # Whence the Raw Digest?
 
 <ol>
-<li class="unfocused"> Decide on a starting size</li>
+<li class="unfocused">Start with X buckets</li>
 <li>Compute a key's raw digest value (??)</li>
-<li class="unfocused">`index = raw_digest_value % array_size`</li>
+<li class="unfocused">`bucket_number = raw_digest_value % x`</li>
 </ol>
 
 !SLIDE

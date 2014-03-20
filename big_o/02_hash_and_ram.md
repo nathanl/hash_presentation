@@ -39,7 +39,7 @@ TADA!
 !SLIDE
 # Arrays and RAM
 
-Each array item is as big as a pointer.
+Array index => memory address
 
     @@@ Ruby
     some_array[328]

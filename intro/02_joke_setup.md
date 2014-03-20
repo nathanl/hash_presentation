@@ -38,7 +38,8 @@
 
 !SLIDE
 # Across the Street...
-![Surveillance Van](secret_van.jpg)
+<img src="secret_van.jpg" style="width: 700px; height: 575px;">
+<!-- ![Surveillance Van](secret_van.jpg) -->
 <span class="attribution">Copyright (c) 2010 Brandon Bartoszek. Used by permission.</a>
 <!-- http://www.flickr.com/photos/eridony/4969156992/ -->
 <!-- left comment asking for permission to use - he responded that it was fine -->

@@ -18,13 +18,16 @@ APPLAUSE! ... Confusion. Analysis.
 ~~~ENDSECTION~~~
 
 !SLIDE
+# Spikes == Redistribution
+
+!SLIDE
 # Hmmm. What about Hash?
 
 !SLIDE
 ![Native Hash operations](native_hash_operations.png)
 
 !SLIDE
-# How big WERE those spikes?
+# How big WERE our spikes?
 
 !SLIDE
 # Ouch
@@ -33,7 +36,7 @@ APPLAUSE! ... Confusion. Analysis.
 !SLIDE
 # But Wait!
 
-Both have linear spikes
+Both have linearly-increasing spikes
 <!-- HERE show Hash and HashMap side by side, or somehow illustrate that the spikes on both are linear -->
 
 <img src="hash_rehashes_linearly.png" class="sidebyside">
