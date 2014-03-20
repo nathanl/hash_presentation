@@ -42,10 +42,9 @@ TADA!
 Array index => memory address
 
     @@@ Ruby
-    some_array[328]
+    some_array[5]
     # item location is:
-    # array_start_location +
-    #  (index x pointer_size)
+    # array_start + (5 x pointer_size)
 
 ~~~SECTION:notes~~~
 Calculate RAM address, bada bing.

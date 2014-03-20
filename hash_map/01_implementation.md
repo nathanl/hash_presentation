@@ -3,15 +3,15 @@
 !SLIDE
 # Guts
 
-A digest function:
-
-    @@@ Ruby
-    index_of('appetizer') # => 2
-
 A sparse array:
 
     @@@ Ruby
     [nil, nil, 'fruit salad', nil...]
+
+A digest function:
+
+    @@@ Ruby
+    index_of('appetizer') # => 2
 
 ~~~SECTION:notes~~~
 "Digest" like food: one-way process. Can't turn poop back into [same] pizza.

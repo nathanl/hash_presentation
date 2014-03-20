@@ -50,13 +50,16 @@ Both have linearly-increasing spikes
 # Success!
 
 - Reads always <= 10 steps
-- Same for writes between spikes
+- Same for writes... unless growth needed
 
 !SLIDE
-# Seriously!
+# It's OK!
 
-- Each rehashing unavoidably O(n), BUT...
-- Amortized insertion time still O(1) - woo!
+- Growth **must** take N steps, but...
+- As it gets slower, also gets less frequent
+- **Average write speed** stays same
+- Amortized analysis: O(1)
+- Woo!
 
 !SLIDE
 <img src="balloons.jpg" style="height: 800px; width: 900px">

@@ -1,2 +1,1 @@
-- Work on explanation of why we succeeded
 - Decide high points to hit if run out of time
